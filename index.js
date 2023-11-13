@@ -110,7 +110,10 @@ app.get('/vr',function(req,res) {
   // res.send({"name":process.pid});
      res.sendFile( __dirname + "/aframe-grass-delek-model2.html");
 });
-
+ app.get('/gallery',function(req,res) {
+  // res.send({"name":process.pid});
+     res.sendFile( __dirname + "/webgl-artgallery.html");
+});
 app.post('/megagenContact',function(req,res) {
 
   console.log(req.body);
