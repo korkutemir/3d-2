@@ -415,7 +415,7 @@ function yeniRastgeleHedef() {
 
         // Fonksiyonu her karede çağır
    
-        const socket = io.connect('http://localhost:3000');
+      /*  const socket = io.connect('http://localhost:3000');
 
 const playerElement = document.getElementById('player');
 const playerElement2 = document.getElementById('player2');
@@ -455,7 +455,7 @@ function sendPlayerData() {
 }
 
 // Send player updates at a regular interval
-setInterval(sendPlayerData, 100);
+setInterval(sendPlayerData, 100);*/
 
     function animate() {
   requestAnimationFrame(animate);
@@ -507,8 +507,8 @@ animate();
     this.el.setAttribute("position", newPosition);
   }
 });*/
-    var audio=new Audio();
-    audio.src="Turkish March Mozart.mp3";
+    /*var audio=new Audio();
+    audio.src="Turkish March Mozart.mp3";*/
     //audio.play();
         }
     </script>
@@ -517,11 +517,10 @@ animate();
    
         <a-assets>
            <!-- <a-asset-item id="tree" src="resimler/art_gallery.glb"></a-asset-item> -->
-           <video id="video" autoplay muted loop="true" src="resimler/ibrahimbey (online-video-cutter.com).mp4"></video>
+          
             <a-asset-item id="tree" src="vr_art_gallery_2020_l_baked__max_scene/scene.gltf"></a-asset-item>
        
             <a-asset-item id="tree7" src="tv_screen.glb"></a-asset-item>
-            <a-asset-item id="tree8" src="grand_piano (1).glb"></a-asset-item>
             <a-asset-item id="tree9" src="katy-perry-avatar_3.glb"></a-asset-item>
        
         <a-asset-item id="tree13" src="emir.glb"></a-asset-item>
@@ -532,7 +531,7 @@ animate();
     
           </a-assets>
         <a-plane static-body visible="false" position="0 -1 -4" scale="60 60 1" repeat=" 5 5 1" rotation="-90 0 0"></a-plane>
-        <a-sky src="360/a-cyberpunk-city-skyline-at-night-gxxewnru.jpeg"></a-sky>
+        <a-sky src="360-2/a-cyberpunk-city-skyline-at-night-gxxewnru.jpeg"></a-sky>
        <!-- <a-box static-body position="0 -1 -4" scale="50 20 50" rotation="0 0 0"></a-box> -->
        <a-plane static-body visible="false" position="-24.5 -1 -4" scale="60 10 1" repeat=" 5 5 1" rotation="0 90 0"></a-plane>
        <a-light type="ambient" color="#ffffff" intensity="1"></a-light> 
@@ -569,8 +568,7 @@ animate();
        <a-entity id="model-glb2" gltf-model="#tree7" position="-0.1 1.4 13.2" scale="0.18 0.13 0.05" rotation="0 -90 0">
       </a-entity> 
 
-      <a-entity id="model-glb3" gltf-model="#tree8" position="3 -1 0" scale="0.6 0.6 0.6" rotation="0 -90 0">
-      </a-entity> 
+  
 
         <a-entity id="model-glb5" gltf-model="#tree9" position="2.0 -0.9 0.1" scale="0.6 0.6 0.6" rotation="0 90 0">
       </a-entity> 
@@ -598,7 +596,7 @@ animate();
       <a-box static-body width="1.2" height="1.2" depth="1.2" position="0 -1 0" color="#4CC3D9" opacity="0"></a-box>
     -->
 
-      <a-video  src="#video" visible="true" position="-0.15 1.4 13.2" rotation="0 -90 0" width="10.5" height="4" ></a-video>
+     
     <!--   <a-entity static-body id="model-glb2" class="clickable" gltf-model="#tree2" position="1.5 -1 -7.5" scale="0.3 0.3 0.3" rotation="0 0 0" touch-listener></a-entity> 
        <a-entity static-body id="model-glb3" class="clickable" gltf-model="#tree3" position="-3.5 0 -3.5" scale="0.05 0.05 0.05" rotation="0 90 0" touch-listener></a-entity> 
        <a-entity static-body id="model-glb5"  gltf-model="#tree5" position="1.5 -0.95 -6.7" scale="0.8 0.8 0.8" rotation="0 0 0" ></a-entity> 
