@@ -106,7 +106,7 @@ app.get('/vr',function(req,res) {
   // res.send({"name":process.pid});
      res.sendFile( __dirname + "/sketchfab-ar2.html");
 });
- app.get('/tablo',function(req,res) {
+ app.get('/tablo3',function(req,res) {
   // res.send({"name":process.pid});
      res.sendFile( __dirname + "/aframe-grass-delek-model2.html");
 });
