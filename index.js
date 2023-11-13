@@ -6,7 +6,7 @@ var https = require('https');
 var cors=require("cors");
 var helmet=require("helmet");
 var os=require("os");
-//var compression = require('compression');
+var compression = require('compression');
 var express = require('express');
 
 
@@ -15,7 +15,7 @@ var app = express();
 
 
 //app.use(cors());
-//app.use(compression());
+app.use(compression());
 
 //app.use(express.static(`${__dirname}`));
 //app.use("/static", express.static(__dirname + "/nodejs"));
@@ -106,22 +106,16 @@ app.get('/vr',function(req,res) {
   // res.send({"name":process.pid});
      res.sendFile( __dirname + "/sketchfab-ar2.html");
 });
- app.get('/tablo',function(req,res) {
+ app.get('/tablo3',function(req,res) {
   // res.send({"name":process.pid});
      res.sendFile( __dirname + "/aframe-grass-delek-model2.html");
 });
-<<<<<<< Updated upstream
- app.get('/gallery',function(req,res) {
-  // res.send({"name":process.pid});
-     res.sendFile( __dirname + "/webgl-artgallery.html");
-});
-=======
+
 app.get('/gallery',function(req,res) {
   // res.send({"name":process.pid});
      res.sendFile( __dirname + "/webgl-artgallery.html");
 });
 
->>>>>>> Stashed changes
 app.post('/megagenContact',function(req,res) {
 
   console.log(req.body);
