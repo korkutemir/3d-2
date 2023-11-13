@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-gallery-0.1";
 const contentToCache = [
-    "Build/webgl-artgallery3.loader.js",
-    "Build/webgl-artgallery3.framework.js",
-    "Build/webgl-artgallery3.data",
-    "Build/webgl-artgallery3.wasm",
+    "Build/webgallery6.loader.js",
+    "Build/webgallery6.framework.js",
+    "Build/webgallery6.data",
+    "Build/webgallery6.wasm",
     "TemplateData/style.css"
 
 ];
