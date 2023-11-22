@@ -14,8 +14,8 @@ var app = express();
 
 
 
-//app.use(cors());
-app.use(compression());
+app.use(cors());
+//app.use(compression());
 
 //app.use(express.static(`${__dirname}`));
 //app.use("/static", express.static(__dirname + "/nodejs"));
